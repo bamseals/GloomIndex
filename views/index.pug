@@ -1,0 +1,13 @@
+include header.pug
+unless !user
+  h2 Latitude:
+  input(id="latitude")
+  h2 Longitude:
+  input(id="longitude")
+  div(class="buttondiv")
+  button(id="locate") locate
+    button(id="clear") clear
+  div(class="buttondiv")
+    button(id="recommend") recommend
+  div(id="resultData")
+include footer.pug

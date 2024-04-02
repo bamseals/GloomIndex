@@ -1,0 +1,63 @@
+curl -X GET -H "Content-Type: application/json" -H "Authorization: Basic YmVhbHNzYTpHYXRvcjIy" http://localhost:3000/users
+
+curl -X GET -H "Content-Type: application/json" -H "Authorization: Basic YmVhbHNzYTpHYXRvcjIy" http://localhost:3000/users/647b6e291fb0ea7898e9c5db
+curl -X GET -H "Content-Type: application/json" -H "Authorization: Basic YmVhbHNzYTpHYXRvcjIy" http://localhost:3000/users/647b926a5bbb624b91357f70
+
+curl -X POST -H "Content-Type: application/json" -H "Authorization: Basic YmVhbHNzYTpHYXRvcjIy" -d "{\"username\":\"guestuser1\",\"password\":\"badpass\"}" http://localhost:3000/users
+
+curl -X GET -H "Content-Type: application/json" http://localhost:3000/users/fc5e855d-fea5-4fa5-bab7-24010d08c655
+
+curl -X DELETE -H "Content-Type: application/json" -H "Authorization: Basic YmVhbHNzYTpHYXRvcjIy" http://localhost:3000/users/647ba3b29c200636a4f2b112
+
+curl -X PUT -H "Content-Type: application/json" -d "{\"name\":\"test2\",\"email\":\"test2\",\"admin\":\"false\"}" http://localhost:3000/users/35d83785-ee6b-478a-a1de-6a030bd438c7
+
+bob:CheeseBoy1992
+
+bealssa:Gator22
+YmVhbHNzYTpHYXRvcjIy
+id: 647b6e291fb0ea7898e9c5db
+
+647ba3b29c200636a4f2b112
+
+// Model.findOne() no longer accepts a callback at Function
+
+clientid: 93f9a98a7399cebe96ba
+client secret:  136398e3a18a8e51d16fb27cdab448f733f1085d 
+
+npm install -g nodemon
+nodemon run start
+
+https://api.weather.gov/points/{latitude},{longitude}
+
+
+{
+    "number": 1,
+    "name": "Tonight",
+    "startTime": "2023-06-18T23:00:00-04:00",
+    "endTime": "2023-06-19T06:00:00-04:00",
+    "isDaytime": false,
+    "temperature": 59,
+    "temperatureUnit": "F",
+    "temperatureTrend": "rising",
+    "probabilityOfPrecipitation": {
+        "unitCode": "wmoUnit:percent",
+        "value": null
+    },
+    "dewpoint": {
+        "unitCode": "wmoUnit:degC",
+        "value": 12.222222222222221
+    },
+    "relativeHumidity": {
+        "unitCode": "wmoUnit:percent",
+        "value": 61
+    },
+    "windSpeed": "6 mph",
+    "windDirection": "E",
+    "icon": "https://api.weather.gov/icons/land/night/sct?size=medium",
+    "shortForecast": "Partly Cloudy",
+    "detailedForecast": "Partly cloudy. Low around 59, with temperatures rising to around 61 overnight. East wind around 6 mph.",
+    "gloom": {
+        "value": 84,
+        "desc": "It is a nice chill day"
+    }
+}

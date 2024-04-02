@@ -1,0 +1,8 @@
+include header.pug
+if !results
+  h1 No results for that search term.
+else
+  h1 Search results:
+  ul
+    each val in results
+      li= val.competitorname

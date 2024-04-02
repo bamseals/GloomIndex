@@ -1,0 +1,13 @@
+html
+  head
+    title= 'Manage Users'
+    link(rel='stylesheet', type='text/css', href='/main.css')
+  body
+    div 
+      h2="Users:"
+      div(class="buttondiv spaceBtm")
+        a(href="/" class='loglink') Home
+        a(href='/register' class='loglink') Register New User
+      each user in users
+        div(class="userRow")!= user
+include footer.pug

@@ -1,0 +1,16 @@
+html
+  head
+    title= 'CIS 371 Project'
+    link(rel='stylesheet', type='text/css', href='/main.css')
+  body
+    #welcome
+      if user
+        h1= 'Welcome ' + user.username +'!'
+        a(href='/users' class='loglink') Manage Users
+        a(href='/songs' class='loglink') Songs
+        a(href='/logout' class='loglink') Logout
+      else
+        h1 Welcome!  Please login.
+        a(href='/login' class='loglink') Login
+        a(href='/auth/github' class='loglink') Login with Github
+        a(href='/register' class='loglink') Register

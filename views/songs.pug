@@ -1,0 +1,12 @@
+html
+  head
+    title= 'Songs'
+    link(rel='stylesheet', type='text/css', href='/main.css')
+  body
+    div 
+      h2="Songs:"
+      div(class="buttondiv")
+        a(href="/" class='loglink') Home
+      each song in songs
+        div(class="songRow")!= song
+include footer.pug
