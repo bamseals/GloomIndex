@@ -22,7 +22,7 @@ id: 647b6e291fb0ea7898e9c5db
 // Model.findOne() no longer accepts a callback at Function
 
 clientid: 93f9a98a7399cebe96ba
-client secret:  136398e3a18a8e51d16fb27cdab448f733f1085d 
+client secret:  SECRET 
 
 npm install -g nodemon
 nodemon run start

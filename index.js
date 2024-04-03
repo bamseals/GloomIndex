@@ -26,7 +26,7 @@ const sessionStore = new MongoDBStore({
 });
 
 app.use(session({ 
-	secret: 'okayComputer',
+	secret: 'SECRET',
 	resave: false,
 	saveUninitialized: false,
 	store: sessionStore
@@ -55,7 +55,7 @@ const validPassword = function(password, salt, hash) {
 
 passport.use(new GitHubStrategy({
 		clientID: "93f9a98a7399cebe96ba",
-		clientSecret: "136398e3a18a8e51d16fb27cdab448f733f1085d",
+		clientSecret: "SECRET",
 		callbackURL: "http://localhost:3000/verify",
 		scope: [ 'user:email' ],
 	},
